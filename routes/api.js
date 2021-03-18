@@ -14,11 +14,11 @@ const chromePaths = {
   linux: '/usr/bin/google-chrome'
 }
 
-const edgePaths = {
-  win32: 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
-  darwin: '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge',
-  linux: '/usr/bin/microsoft-edge'
-}
+// const edgePaths = {
+//   win32: 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
+//   darwin: '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge',
+//   linux: '/usr/bin/microsoft-edge'
+// }
 
 const awsOptions = async () => ({
   headless: chromium.headless,
@@ -28,7 +28,7 @@ const awsOptions = async () => ({
 
 const localOptions = () => ({
   headless: true,
-  executablePath: edgePaths[process.platform],
+  executablePath: chromePaths[process.platform],
   args: []
 })
 
