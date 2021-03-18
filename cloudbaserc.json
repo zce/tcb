@@ -8,7 +8,7 @@
         "use": "@cloudbase/framework-plugin-node",
         "inputs": {
           "name": "m2i",
-          "path": "/"
+          "path": "/m2i"
         }
       }
     }
