@@ -1,36 +1,25 @@
-# short
+# m2i
 
-> A short url service hosted on TCB.
+> A service to convert markdown to image.
 
 ## Getting Started
 
-[![](https://main.qcloudimg.com/raw/95b6b680ef97026ae10809dbd6516117.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgithub.com%2Fzce%2Fshort-tcb&branch=master&appName=short)
+[![](https://main.qcloudimg.com/raw/95b6b680ef97026ae10809dbd6516117.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgithub.com%2Fzce%2Fm2i-tcb&branch=master&appName=m2i)
 
 ## Local Development
 
 ### Clone
 
 ```shell
-$ git clone https://github.com/zce/short-tcb.git
+$ git clone https://github.com/zce/m2i-tcb.git
 ```
 
 ### Install
 
 ```shell
-$ cd short-tcb
+$ cd m2i-tcb
 $ npm install
 ```
-
-### Environment
-
-```shell
-$ cp .env.example .env
-$ vi .env
-```
-
-- `ENV_ID`: your tencent cloudbase env id
-- `SECRET_ID`: your tencent secret id
-- `SECRET_KEY`: your tencent secret key
 
 ### Running
 
@@ -40,11 +29,11 @@ $ npm run dev
 
 ### Deploy
 
-[![](https://main.qcloudimg.com/raw/95b6b680ef97026ae10809dbd6516117.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgithub.com%2Fzce%2Fshort-tcb&branch=master&appName=short)
+[![](https://main.qcloudimg.com/raw/95b6b680ef97026ae10809dbd6516117.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgithub.com%2Fzce%2Fm2i-tcb&branch=master&appName=m2i)
 
 ## Related
 
-- [zce/short](https://github.com/zce/short) - A short url service hosted on Vercel.
+- [zce/m2i](https://github.com/zce/m2i) - A minimalist markdown to image converter.
 
 ## Contributing
 
