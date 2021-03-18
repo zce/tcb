@@ -1,0 +1,16 @@
+{
+  "version": "2.0",
+  "envId": "env-uramrbvb",
+  "framework": {
+    "name": "m2i",
+    "plugins": {
+      "node": {
+        "use": "@cloudbase/framework-plugin-node",
+        "inputs": {
+          "name": "m2i",
+          "path": "/"
+        }
+      }
+    }
+  }
+}

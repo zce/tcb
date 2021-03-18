@@ -1,0 +1,40 @@
+{
+  "name": "short",
+  "version": "0.1.0",
+  "description": "A short url service hosted on TCB.",
+  "keywords": [
+    "short",
+    "zce"
+  ],
+  "repository": "zce/short",
+  "license": "MIT",
+  "author": "zce <w@zce.me> (https://zce.me)",
+  "main": "app.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "standard --fix",
+    "dev": "node bin/www"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "8.0.0",
+    "express": "4.17.1",
+    "marked": "2.0.1",
+    "puppeteer-core": "8.0.0"
+  },
+  "devDependencies": {
+    "standard": "16.0.3"
+  },
+  "renovate": {
+    "extends": [
+      "zce"
+    ]
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
