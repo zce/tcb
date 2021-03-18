@@ -1,12 +1,12 @@
 {
-  "name": "short",
+  "name": "m2i",
   "version": "0.1.0",
-  "description": "A short url service hosted on TCB.",
+  "description": "A service to convert markdown to image.",
   "keywords": [
-    "short",
+    "m2i",
     "zce"
   ],
-  "repository": "zce/short",
+  "repository": "zce/m2i",
   "license": "MIT",
   "author": "zce <w@zce.me> (https://zce.me)",
   "main": "app.js",
