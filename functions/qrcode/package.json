@@ -1,0 +1,9 @@
+{
+  "name": "qrcode",
+  "version": "0.1.0",
+  "description": "A QRCode generator service hosted on TCB.",
+  "main": "index.js",
+  "dependencies": {
+    "qrcode-svg": "^1.1.0"
+  }
+}
