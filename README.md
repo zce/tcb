@@ -1,8 +1,6 @@
 # tcb
 
 [![License][license-img]][license-url]
-[![NPM Downloads][downloads-img]][downloads-url]
-[![NPM Version][version-img]][version-url]
 [![Dependency Status][dependency-img]][dependency-url]
 [![devDependency Status][devdependency-img]][devdependency-url]
 [![Code Style][style-img]][style-url]
@@ -32,10 +30,6 @@
 
 [license-img]: https://img.shields.io/github/license/zce/tcb
 [license-url]: https://github.com/zce/tcb/blob/master/LICENSE
-[downloads-img]: https://img.shields.io/npm/dm/tcb
-[downloads-url]: https://npm.im/tcb
-[version-img]: https://img.shields.io/npm/v/tcb
-[version-url]: https://npm.im/tcb
 [dependency-img]: https://img.shields.io/david/zce/tcb
 [dependency-url]: https://david-dm.org/zce/tcb
 [devdependency-img]: https://img.shields.io/david/dev/zce/tcb

@@ -3,213 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>m2i</title>
-  <style>
-    :root {
-      --color-primary: #5c7cfa;
-      --color-primary-dark: #4263eb;
-      --color-primary-alpha: #5c7cfa50;
-
-      --body-color: #495057;
-      --body-bg: #f8f9fa;
-
-      --border-color: #dee2e6;
-    }
-
-    body {
-      max-width: 45rem;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      color: var(--body-color);
-      background: var(--body-bg);
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.5;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      text-rendering: optimizelegibility;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    h1 {
-      font-size: 5rem;
-      font-weight: 300;
-      text-align: center;
-      opacity: .2;
-    }
-
-    a {
-      color: var(--color-primary);
-      text-decoration: none;
-      transition: color .3s;
-    }
-
-    a:hover {
-      color: var(--color-primary);
-      text-decoration: underline;
-    }
-
-    label {
-      display: block;
-      margin: .5rem 0;
-      font-weight: 700;
-    }
-
-    input, textarea {
-      -webkit-appearance: none;
-      appearance: none;
-      display: block;
-      width: 100%;
-      padding: .5rem 1rem;
-      border: 1px solid var(--border-color);
-      border-radius: .25rem;
-      box-sizing: border-box;
-      color: #33404d;
-      line-height: inherit;
-      font-size: 16px;
-      resize: vertical;
-      transition: border .3s, background .3s, color .3s, box-shadow .3s;
-    }
-
-    input:focus, textarea:focus {
-      box-shadow: 0 0 0 .25rem var(--color-primary-alpha);
-      border-color: var(--color-primary);
-      outline: 0;
-    }
-
-    details {
-      margin: 1rem 0 2rem;
-      border: 1px solid var(--border-color);
-      border-radius: .25rem;
-      transition: background .3s ease 0s, box-shadow .3s ease 0s;
-    }
-
-    details[open] {
-      background: #fff;
-    }
-
-    details summary {
-      padding: .5rem 1rem;
-      font-weight: 500;
-      user-select: none;
-      cursor: pointer;
-      outline: 0;
-    }
-
-    details div {
-      padding: 1rem;
-      border-top: 1px solid var(--border-color);
-    }
-
-    details small {
-      margin: 0;
-      font-size: .875rem;
-      line-height: 2;
-    }
-
-    details code {
-      padding: .125rem .25rem;
-      border-radius: .125rem;
-      color: var(--body-bg);
-      background: var(--body-color);
-    }
-
-    button {
-      appearance: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      padding: .5rem .75rem;
-      border: 1px solid var(--color-primary);
-      border-radius: .25rem;
-      background: var(--color-primary);
-      color: #fff;
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: inherit;
-      cursor: pointer;
-      user-select: none;
-      transition: border .3s, background .3s, color .3s;
-    }
-
-    button:hover:not(:disabled) {
-      border-color: var(--color-primary-dark);
-      background: var(--color-primary-dark);
-    }
-
-    button:focus:not(:disabled) {
-      box-shadow: 0 0 0 .25rem var(--color-primary-alpha);
-      border-color: var(--color-primary);
-      outline: 0;
-    }
-
-    button:disabled {
-      opacity: .6;
-      cursor: not-allowed;
-    }
-
-    footer {
-      margin-top: 5rem;
-      padding: 1rem;
-      border-top: 1px solid var(--border-color);
-      text-align: center;
-      opacity: .5;
-    }
-
-    footer i {
-      font-style: normal;
-      color: #ff8787;
-    }
-  </style>
+  <title>M2I</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header><h1>m2i</h1></header>
-
-  <main>
-    <section>
-      <h2>Introduction</h2>
-      <p>A markdown to image service hosted on TCB.</p>
-      <p><a href="https://github.com/zce/tcb#readme">Getting started</a></p>
-    </section>
-
-    <section>
-      <h2>Playground</h2>
-      <form action="api" method="post">
-        <label for="name">name</label>
-        <input name="name" id="name" placeholder="Input your username.">
-        <details>
-          <summary>Advanced settings</summary>
-          <div>
-            <label for="host">host</label>
-            <input name="host" id="host" placeholder="Input your email host.">
-            <small>more introduce.</small>
-          </div>
-        </details>
-        <button>Generate</button>
-      </form>
-    </section>
-
-    <section>
-      <h2>Endpoints</h2>
-      <h3>GET <code>/api</code></h3>
-      <p>Combine an email address.</p>
-      <pre><code>$ curl https://localhost:3000/api</code></pre>
-      <h4>Parameters</h4>
-      <ul>
-        <li><code>name</code>: email user name, alias: <code>username</code></li>
-        <li><code>host</code>: email host, default: <code>'zce.me'</code></li>
-      </ul>
-      <h4>Response</h4>
-      <pre><code>{
-  "name": "...",
-  "email": "..."
-}</code></pre>
-    </section>
-  </main>
-
+  <header><h1>M2I</h1></header>
+  <form action="api" method="post" target="_blank">
+    <label for="editor">Markdown</label>
+    <textarea name="markdown" id="editor" cols="30" rows="14" placeholder="Markdown"></textarea>
+    <details>
+      <summary>Advanced settings</summary>
+      <div>
+        <label for="width">width</label>
+        <input type="number" name="width" id="width" value="600" placeholder="Viewport width">
+        <label for="scale">scale</label>
+        <input type="number" name="scale" id="scale" value="2" placeholder="Device scale factor">
+        <label for="template">template</label>
+        <textarea name="template" id="template" cols="30" rows="6" placeholder="HTML template"><link rel="stylesheet" href="https://cdn.zce.me/markdown.css">
+<style>
+  /* custom styles */
+</style>
+<div>{{markdown}}</div></textarea>
+        <small><code>{{markdown}}</code> will be replaced with the converted markdown html.</small>
+      </div>
+    </details>
+    <button>Generate</button>
+  </form>
   <footer>
-    This service is hosted on <a href="https://cloudbase.net">TCB</a>.
+    This service is Hosted on <a href="https://cloudbase.net">TCB</a>.
     <a href="https://github.com/zce/tcb">&lt;/&gt;</a> with <i>&hearts;</i> by <a href="https://zce.me">zce</a>.
     Licensed under the <a href="https://github.com/zce/tcb/blob/master/LICENSE">MIT License</a>.
   </footer>
