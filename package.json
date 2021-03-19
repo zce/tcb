@@ -1,40 +1,31 @@
 {
-  "name": "m2i",
+  "name": "tcb",
   "version": "0.1.0",
-  "description": "A service to convert markdown to image.",
+  "description": "All my tencent cloudbase sources.",
   "keywords": [
-    "m2i",
+    "tcb",
     "zce"
   ],
-  "repository": "zce/m2i",
+  "repository": "zce/tcb",
   "license": "MIT",
   "author": "zce <w@zce.me> (https://zce.me)",
-  "main": "app.js",
-  "files": [
-    "lib"
-  ],
   "scripts": {
+    "new": "plop",
+    "dev": "node-dev -r dotenv/config bin/www",
     "lint": "standard --fix",
-    "dev": "node bin/www"
+    "deploy": "tcb fn deploy"
   },
-  "dependencies": {
-    "chrome-aws-lambda": "8.0.0",
-    "express": "4.17.1",
-    "marked": "2.0.1",
-    "puppeteer-core": "8.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@cloudbase/cli": "1.5.5",
+    "dotenv": "^8.2.0",
+    "node-dev": "^6.5.0",
+    "plop": "2.7.4",
     "standard": "16.0.3"
   },
   "renovate": {
     "extends": [
       "zce"
     ]
-  },
-  "engines": {
-    "node": ">=10"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
   }
 }

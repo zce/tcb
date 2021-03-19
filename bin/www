@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
-const app = require('../app')
+const func = process.argv[2]
+
+if (!func) throw new Error('You must provide the function name')
+
+const app = require(`../functions/${func}/app`)
 
 app.listen(3000, () => console.log('> http://localhost:3000'))
