@@ -19,6 +19,7 @@ module.exports = async (req, res) => {
     return res.status(500).send(e.message)
   }
 
+  console.log(req.get('x-forwarded-for').split(','))
   // add access log
-  await storage.addLog(slug, req.get('user-agent'), req.get('x-real-ip'))
+  await storage.addLog(slug, req.get('user-agent'), req.get('x-forwarded-for').split(',')[0])
 }

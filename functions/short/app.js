@@ -6,7 +6,6 @@ const redirect = require('./routes/redirect')
 
 const app = express()
 
-app.set('trust proxy', true)
 app.set('x-powered-by', false)
 
 app.use(express.static(path.join(__dirname, 'public')))
