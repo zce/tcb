@@ -17,7 +17,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@cloudbase/cli": "1.6.3",
+    "@cloudbase/cli": "1.6.4",
     "dotenv": "8.2.0",
     "node-dev": "6.5.0",
     "plop": "2.7.4",
