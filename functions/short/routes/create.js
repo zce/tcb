@@ -2,7 +2,7 @@ const storage = require('../lib/storage')
 
 /** @type {import('express').RequestHandler} */
 module.exports = async (req, res) => {
-  // params from request body or querystring
+  // params from request body
   const { url, slug } = req.body
 
   // url is required
