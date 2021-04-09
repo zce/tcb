@@ -15,14 +15,6 @@
       "handler": "index.main"
     },
     {
-      "name": "m2i",
-      "timeout": 20,
-      "envVariables": {},
-      "runtime": "Nodejs10.15",
-      "memorySize": 512,
-      "handler": "index.main"
-    },
-    {
       "name": "qrcode",
       "timeout": 5,
       "envVariables": {},
