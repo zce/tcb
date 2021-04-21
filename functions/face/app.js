@@ -8,7 +8,7 @@ const upload = multer()
 
 app.set('x-powered-by', false)
 
-app.use(upload.single('image'), (req, res) => {
+app.post('/', upload.single('image'), (req, res) => {
   detect(req.file.buffer.toString('base64')).then(
     data => res.send(data),
     error => res.status(500).send(error)
