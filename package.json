@@ -16,7 +16,7 @@
     "deploy": "tcb fn deploy"
   },
   "devDependencies": {
-    "@cloudbase/cli": "1.8.0",
+    "@cloudbase/cli": "1.9.2",
     "dotenv": "10.0.0",
     "node-dev": "7.0.0",
     "plop": "2.7.4",
