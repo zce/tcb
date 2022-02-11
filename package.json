@@ -15,16 +15,16 @@
     "lint": "standard --fix",
     "deploy": "tcb fn deploy"
   },
-  "devDependencies": {
-    "@cloudbase/cli": "1.9.2",
-    "dotenv": "10.0.0",
-    "node-dev": "7.0.0",
-    "plop": "2.7.4",
-    "standard": "16.0.3"
-  },
   "renovate": {
     "extends": [
       "zce"
     ]
+  },
+  "devDependencies": {
+    "@cloudbase/cli": "1.12.0",
+    "dotenv": "16.0.0",
+    "node-dev": "7.1.0",
+    "plop": "3.0.5",
+    "standard": "16.0.4"
   }
 }

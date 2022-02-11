@@ -4,9 +4,9 @@
   "description": "A short url service hosted on TCB.",
   "main": "index.js",
   "dependencies": {
-    "@cloudbase/node-sdk": "^2.5.0",
-    "express": "^4.17.1",
-    "nanoid": "^3.1.22",
+    "@cloudbase/node-sdk": "^2.7.1",
+    "express": "^4.17.2",
+    "nanoid": "^3.2.0",
     "serverless-http": "^2.7.0"
   }
 }

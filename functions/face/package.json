@@ -4,10 +4,10 @@
   "description": "A face detect service by tencent cloud.",
   "main": "index.js",
   "dependencies": {
-    "@cloudbase/node-sdk": "^2.5.0",
-    "express": "^4.17.1",
-    "multer": "^1.4.2",
+    "@cloudbase/node-sdk": "^2.7.1",
+    "express": "^4.17.2",
+    "multer": "^1.4.4",
     "serverless-http": "^2.7.0",
-    "tencentcloud-sdk-nodejs": "^4.0.102"
+    "tencentcloud-sdk-nodejs": "^4.0.286"
   }
 }
