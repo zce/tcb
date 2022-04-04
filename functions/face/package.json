@@ -7,7 +7,7 @@
     "@cloudbase/node-sdk": "^2.7.1",
     "express": "^4.17.2",
     "multer": "^1.4.4",
-    "serverless-http": "^2.7.0",
+    "serverless-http": "^3.0.0",
     "tencentcloud-sdk-nodejs": "^4.0.286"
   }
 }
